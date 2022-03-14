@@ -15,7 +15,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           tags: true
           force: true
-      - uses: peter-evans/create-or-update-comment@master
+      - uses: peter-evans/create-or-update-comment@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
