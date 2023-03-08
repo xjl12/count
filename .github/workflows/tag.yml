@@ -36,7 +36,7 @@ jobs:
             [![total / year](https://img.shields.io/badge/dynamic/json?url=https://data.jsdelivr.com/v1/package/gh/${{ github.repository }}@${{ github.event.issue.number }}/stats/year&label=total&query=total&suffix=+/+year&style=flat-square)](https://github.com/${{ github.repository }})
 
             ```
-      - uses: octokit/request-action@master
+      - uses: octokit/request-action@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
